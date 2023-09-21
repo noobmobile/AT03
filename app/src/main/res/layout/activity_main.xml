@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#541A54"
+    android:backgroundTint="#541A54"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/rounded_layout"
+        android:backgroundTint="?android:backgroundTint"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="uma bomba de gasolina ilustrando o app"
+            android:paddingVertical="10dp"
+            android:textAlignment="center"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Gasolina ou Álcool?"
+            android:textAlignment="center"
+            android:textColor="#541A54"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gasolina"
+            android:layout_marginHorizontal="30dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edGasolina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alcool"
+            android:layout_marginHorizontal="30dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edAlcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Switch
+            android:id="@+id/swPercentual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="30dp"
+            android:text="75%" />
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#541A54"
+            android:text="Calcular" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
