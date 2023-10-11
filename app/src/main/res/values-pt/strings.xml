@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Com qual combustível?</string>
+    <string name="main_text">Gasolina ou Álcool?</string>
+    <string name="gasolina">Gasolina</string>
+    <string name="alcool">Álcool</string>
+    <string name="calcular">Calcular</string>
+</resources>

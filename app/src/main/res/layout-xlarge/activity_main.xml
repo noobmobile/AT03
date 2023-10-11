@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#541A54"
-    android:backgroundTint="#541A54"
+    android:background="?android:colorPrimary"
+    android:backgroundTint="?android:colorPrimary"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
+        android:layout_width="600dp"
+        android:layout_height="900dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -23,8 +23,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="uma bomba de gasolina ilustrando o app"
             android:paddingVertical="10dp"
@@ -40,13 +40,14 @@
             android:text="@string/main_text"
             android:textAlignment="center"
             android:textColor="?android:colorSecondary"
-            android:textSize="25sp"
+            android:textSize="50sp"
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/gasolina"
+            android:textSize="50sp"
             android:layout_marginHorizontal="30dp"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -61,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/alcool"
+            android:textSize="50sp"
             android:layout_marginHorizontal="30dp"
             >
             <com.google.android.material.textfield.TextInputEditText
@@ -75,14 +77,15 @@
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="30dp"
+            android:textSize="20sp"
             android:text="75%" />
 
         <Button
             android:id="@+id/btCalcular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="#541A54"

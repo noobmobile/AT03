@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         var percentual = savedInstanceState?.getDouble("percentual", 0.7) ?: 0.7
         Log.d("PDM23","No onCreate, $percentual")
 
-        val btCalc: Button = findViewById(R.id.btCalcular)
+        val btCalc: View = findViewById(R.id.btCalcular)
         btCalc.setOnClickListener {
             val gasolina = findViewById<EditText>(R.id.edGasolina).text.toString().toInt()
             val alcool = findViewById<EditText>(R.id.edAlcool).text.toString().toInt()
