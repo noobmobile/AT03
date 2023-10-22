@@ -8,11 +8,31 @@
     android:backgroundTint="#541A54"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:minHeight="20sp"
+             />
+    </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="100dp"
+        android:layout_marginHorizontal="50dp"
         android:background="@drawable/rounded_layout"
         android:backgroundTint="?android:backgroundTint"
         android:orientation="vertical"
@@ -48,12 +68,15 @@
             android:layout_height="wrap_content"
             android:hint="@string/gasolina"
             android:layout_marginHorizontal="30dp"
+            android:textColorHint="?android:textColorHint"
             >
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edGasolina"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
+                android:textColor="?android:textColorPrimary"
+
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,6 +85,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/alcool"
             android:layout_marginHorizontal="30dp"
+            android:textColorHint="?android:textColorHint"
             >
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edAlcool"
@@ -75,8 +99,10 @@
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:height="48dp"
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
+            android:textColor="?android:textColorHint"
             android:text="75%" />
 
         <Button
